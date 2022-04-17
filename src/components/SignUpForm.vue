@@ -3,7 +3,7 @@
     class="absolute top-0 w-screen object-fill lg:object-cover max-h-screen"
     src="../assets/backgrounds/LoginPage Dark.png"
   />
-  <div class="flex flex-row justify-between">
+  <div class="flex flex-row justify-between items-center">
     <div class="w-2/5 h-full"></div>
 
     <form class="form w-2/5 h-full">
