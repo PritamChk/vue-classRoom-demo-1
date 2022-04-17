@@ -1,5 +1,9 @@
 <template>
-  <from class="form">
+<img
+      class="absolute top-0 w-screen max-h-screen"
+      src="../assets/backgrounds/LoginPage Dark.png"
+    />
+  <from class="form right-0">
     <div class="form-section">
       <label for="email" class="label">Email</label>
       <input
