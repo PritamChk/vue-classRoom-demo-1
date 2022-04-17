@@ -1,11 +1,15 @@
 <template>
-<img
-      class="absolute top-0 w-screen object-fill lg:object-cover max-h-screen"
-      src="../assets/backgrounds/LoginPage Dark.png"
-    />
+  <!-- <img
+    class="absolute top-0 w-screen object-fill lg:object-cover max-h-screen"
+    src="../assets/backgrounds/LoginPage Dark.png"
+  /> -->
+  <div
+    class="absolute top-0 w-screen object-cover min-h-screen bg-mobile-login sm:bg-desktop-login from-fuchsia-300 to-blue-100"
+  ></div>
+  <!-- src="../assets/backgrounds/LoginPage Dark.png" -->
 
   <div class="flex flex-row justify-between items-center">
-    <div class="w-2/5 h-full"></div>
+    <div class="w-1/5 md:w-2/5 h-full"></div>
     <from class="form right-0 self-center">
       <div class="form-section">
         <label for="email" class="label">Email</label>

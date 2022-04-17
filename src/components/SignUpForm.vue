@@ -1,8 +1,11 @@
 <template>
-  <img
+  <!-- <img
     class="absolute top-0 w-screen object-fill lg:object-cover max-h-screen"
     src="../assets/backgrounds/LoginPage Dark.png"
-  />
+  /> -->
+  <div
+    class="absolute top-0 w-screen object-cover min-h-screen bg-mobile-login sm:bg-desktop-login from-fuchsia-300 to-blue-100"
+  ></div>
   <div class="flex flex-row justify-between items-center">
     <div class="w-2/5 h-full"></div>
 

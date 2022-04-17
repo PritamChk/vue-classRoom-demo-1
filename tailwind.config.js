@@ -5,7 +5,13 @@ module.exports = {
     "./src/*.{vue,js}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'mobile-login':"url('./src/assets/backgrounds/Phone_Login Dark.png')",
+        'desktop-login':"url('./src/assets/backgrounds/LoginPage Dark.png')"
+
+      }
+    },
   },
   plugins: [
     require("daisyui"),
