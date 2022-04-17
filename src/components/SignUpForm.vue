@@ -4,12 +4,12 @@
     src="../assets/backgrounds/LoginPage Dark.png"
   /> -->
   <div
-    class="absolute top-0 w-screen object-cover min-h-screen bg-mobile-login sm:bg-desktop-login from-fuchsia-300 to-blue-100"
+    class="absolute top-0 w-screen object-contain h-screen bg-mobile-login sm:bg-desktop-login"
   ></div>
-  <div class="flex flex-row justify-between items-center">
-    <div class="w-2/5 h-full"></div>
+  <div class="flex flex-row justify-between items-center overflow-hidden">
+    <div class="w-1/5 md:w-2/5 h-full"></div>
 
-    <form class="form w-2/5 h-full">
+    <form class="form w-2/5 h-full ">
       <div class="form-section">
         <label class="label" for="fname">First Name</label>
         <input
