@@ -1,18 +1,22 @@
 <template>
-  <div>hello</div>
-  <BanIcon class="text-white w-10 h-10 inline-block"></BanIcon>
+  <div class="w-10 h-10 text-blue">
+    <HandIcon />
+  </div>
+  <ChevronDoubleDownIcon class="w-10 h-10 text-blue-500" />
+  <AnnotationIcon class="w-10 h-10 text-fuchsia-400" />
 </template>
+
 <script>
-import BanIcon from "@heroicons/vue"
+import { HandIcon, 
+ChevronDoubleDownIcon,
+AnnotationIcon
+} from "@heroicons/vue/outline";
 export default {
-  name:'DropDown',
-  data() {
-    return {
-      
-    }
+  name: "DropDown",
+  components: {
+    HandIcon,
+    AnnotationIcon,
+    ChevronDoubleDownIcon,
   },
-  components:[
-    BanIcon,
-  ]
-}
+};
 </script>
