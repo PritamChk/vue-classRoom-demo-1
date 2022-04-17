@@ -26,6 +26,13 @@
           Login
         </li>
       </router-link>
+      <router-link to="/dropdown">
+        <li
+          class="hover: rounded px-5 py-1 backdrop-blur-xl transition-all duration-100 ease-in-out hover:bg-slate-50/50 hover:drop-shadow-xl hover:backdrop-filter"
+        >
+          Drop Down
+        </li>
+      </router-link>
     </ul>
   </nav>
 </template>
