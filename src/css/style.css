@@ -38,7 +38,7 @@
 }
 
 .form {
-  @apply mt-3 mr-10 flex flex-1 flex-col rounded-xl bg-slate-200/20 px-2 py-1 shadow-md shadow-gray-900/25 backdrop-blur-md backdrop-filter;
+  @apply mt-3 mr-10 flex flex-1 flex-col rounded-xl bg-slate-200/20 px-2 py-1 shadow-md shadow-gray-900/25 backdrop-blur-lg backdrop-filter;
 }
 
 .form-section {
