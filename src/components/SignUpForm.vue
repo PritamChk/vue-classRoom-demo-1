@@ -9,7 +9,7 @@
   <div class="flex flex-row justify-between items-center overflow-hidden">
     <div class="w-1/5 md:w-2/5 h-full" />
 
-    <form class="form w-2/5 h-full ">
+    <form class="form w-2/5 h-full">
       <div class="form-section">
         <label
           class="label"
