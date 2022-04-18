@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <router-view class="w-screen h-screen" />
+   <router-view class="w-screen h-screen" />
 </template>
 
 <script setup>

@@ -4,6 +4,7 @@
     <ChevronDoubleDownIcon class="w-40 h-40 text-blue-500" />
     <AnnotationIcon class="w-10 h-10 text-fuchsia-400" />
   </div>
+  <div></div>
   <kinesis-container class="absolute top-52 left-44">
     <kinesis-element
       easing
@@ -20,11 +21,7 @@
 </template>
 
 <script>
-import {
-  HandIcon,
-  ChevronDoubleDownIcon,
-  AnnotationIcon,
-} from "@heroicons/vue/outline";
+import { HandIcon, ChevronDoubleDownIcon, AnnotationIcon } from "@heroicons/vue/outline";
 export default {
   name: "DropDown",
   components: {
@@ -34,7 +31,7 @@ export default {
   },
   data() {
     return {
-      img: '../../src/assets/component_imgs/ColorPallet.svg'
+      img: "../../src/assets/component_imgs/ColorPallet.svg",
     };
   },
 };
