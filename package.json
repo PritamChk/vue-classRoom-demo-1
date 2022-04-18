@@ -12,6 +12,7 @@
     "@heroicons/vue": "^1.0.6",
     "daisyui": "^2.14.0",
     "tailwind-scrollbar-hide": "^1.1.7",
+    "tw-elements": "^1.0.0-alpha12",
     "vue": "^3.2.25",
     "vue-kinesis": "^2.0.5",
     "vue-router": "^4.0.14"

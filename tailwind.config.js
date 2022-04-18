@@ -2,7 +2,8 @@ module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{vue,js}",
-    "./src/*.{vue,js}"
+    "./src/*.{vue,js}",
+    './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
     extend: {
@@ -15,6 +16,7 @@ module.exports = {
   },
   plugins: [
     require("daisyui"),
-    require('tailwind-scrollbar-hide')
+    require('tailwind-scrollbar-hide'),
+    require('tw-elements/dist/plugin')
   ],
 }
