@@ -6,6 +6,7 @@
   </div>
   <kinesis-container class="absolute top-52 left-44">
     <kinesis-element
+      easing
       class="w-40 h-40"
       tag="img"
       :src="img"
