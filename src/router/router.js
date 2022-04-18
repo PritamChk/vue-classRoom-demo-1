@@ -3,6 +3,7 @@ import SignUpForm from '../components/SignUpForm.vue'
 import LoginForm from '../components/LoginForm.vue'
 import Home from '../components/Home.vue'
 import DropDown from '../components/DropDown.vue'
+import Test from '../components/Test.vue'
 
 const router= createRouter({
     history:createWebHistory(),
@@ -25,6 +26,11 @@ const router= createRouter({
             path:'/register',
             name:'SignUpForm',
             component: SignUpForm,
+        },
+        {
+            path:'/test',
+            name:'Test',
+            component: Test,
         },
         {
             path:'/dropdown',
