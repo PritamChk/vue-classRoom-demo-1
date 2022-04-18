@@ -1,3 +1,4 @@
+/* eslint-disable vue/multi-word-component-names */
 <template>
   <nav
     class="sticky top-0 z-20 bg-slate-900/60 shadow-md backdrop-blur-sm backdrop-filter"
@@ -39,6 +40,7 @@
 
 <script>
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: "Navbar",
 };
 </script>

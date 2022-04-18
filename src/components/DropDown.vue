@@ -13,7 +13,7 @@
       :alt="'No Image Found'"
       :strength="-10"
       type="rotate"
-      transformOrigin="50% 130%"
+      transform-origin="50% 130%"
       axis="x"
     />
   </kinesis-container>

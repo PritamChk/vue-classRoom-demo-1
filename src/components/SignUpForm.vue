@@ -5,134 +5,202 @@
   /> -->
   <div
     class="absolute top-0 w-screen object-contain h-screen bg-mobile-login sm:bg-desktop-login"
-  ></div>
+  />
   <div class="flex flex-row justify-between items-center overflow-hidden">
-    <div class="w-1/5 md:w-2/5 h-full"></div>
+    <div class="w-1/5 md:w-2/5 h-full" />
 
     <form class="form w-2/5 h-full ">
       <div class="form-section">
-        <label class="label" for="fname">First Name</label>
+        <label
+          class="label"
+          for="fname"
+        >First Name</label>
         <input
-          autocomplete="off"
           v-model.trim.lazy="user.first_name"
+          autocomplete="off"
           required
           type="text"
           placeholder="Type here"
           class="input-blur uppercase"
-        />
+        >
       </div>
       <div class="form-section">
-        <label class="label" for="fname">Last Name</label>
+        <label
+          class="label"
+          for="fname"
+        >Last Name</label>
         <input
-          autocomplete="off"
           v-model.trim.lazy="user.last_name"
+          autocomplete="off"
           required
           type="text"
           placeholder="Type here"
           class="input-blur uppercase"
-        />
+        >
       </div>
       <div class="form-section">
-        <label class="label" for="email">Email</label>
+        <label
+          class="label"
+          for="email"
+        >Email</label>
         <input
-          autocomplete="off"
           v-model.trim.lazy="user.email"
+          autocomplete="off"
           required
           type="email"
           placeholder="babla@habla.com"
           class="input-blur lowercase"
-        />
+        >
       </div>
       <div class="form-section">
-        <label class="label" for="email">Password</label>
+        <label
+          class="label"
+          for="email"
+        >Password</label>
         <input
-          autocomplete="off"
           v-model="user.password"
+          autocomplete="off"
           required
           type="password"
           placeholder="Password"
           class="input-blur"
-        />
+        >
       </div>
 
       <div class="form-section accent-green-400">
-        <label for="Sex" class="label">Category</label>
-        <label for="Male" class="radio-option">
+        <label
+          for="Sex"
+          class="label"
+        >Category</label>
+        <label
+          for="Male"
+          class="radio-option"
+        >
           <input
+            v-model="user.category"
             required
             type="radio"
             class="radio-primary radio-md"
             name="Sex"
             value="student"
-            v-model="user.category"
-          /><span> Student </span>
+          ><span> Student </span>
         </label>
-        <label for="Female" class="radio-option">
+        <label
+          for="Female"
+          class="radio-option"
+        >
           <input
+            v-model="user.category"
             required
             type="radio"
             class="radio-primary radio-md"
             name="Sex"
-            v-model="user.category"
             value="teacher"
             checked
-          /><span> Teacher </span>
+          ><span> Teacher </span>
         </label>
       </div>
       <template v-if="user.category === 'student'">
         <div class="form-section">
-          <label for="Sem" class="label">University Roll</label>
+          <label
+            for="Sem"
+            class="label"
+          >University Roll</label>
           <input
-            type="text"
-            name="univ_roll"
             id="roll"
             v-model="user.univ_roll"
+            type="text"
+            name="univ_roll"
             required
             class="input-blur"
             pattern="[0-9]{11}"
-          />
+          >
         </div>
         <div class="form-section">
-          <label for="Sem" class="label">Semester</label>
-          <select required class="input-blur" v-model="user.sem">
-            <option disabled selected value="None">Your Semester</option>
-            <option v-for="sem in sems" :key="sem" class="label">
+          <label
+            for="Sem"
+            class="label"
+          >Semester</label>
+          <select
+            v-model="user.sem"
+            required
+            class="input-blur"
+          >
+            <option
+              disabled
+              selected
+              value="None"
+            >
+              Your Semester
+            </option>
+            <option
+              v-for="sem in sems"
+              :key="sem"
+              class="label"
+            >
               {{ sem }}
             </option>
           </select>
         </div>
         <div class="form-section">
-          <label for="Dept" class="label">Department</label>
-          <select required class="input-blur uppercase" v-model="user.dept">
-            <option disabled selected value="None">Your Depertment</option>
-            <option v-for="dept in depts" :key="dept" class="label">
+          <label
+            for="Dept"
+            class="label"
+          >Department</label>
+          <select
+            v-model="user.dept"
+            required
+            class="input-blur uppercase"
+          >
+            <option
+              disabled
+              selected
+              value="None"
+            >
+              Your Depertment
+            </option>
+            <option
+              v-for="dept in depts"
+              :key="dept"
+              class="label"
+            >
               {{ dept }}
             </option>
           </select>
         </div>
         <div class="form-section">
-          <label for="batch" class="label">Batch of</label>
+          <label
+            for="batch"
+            class="label"
+          >Batch of</label>
           <input
+            v-model.number="user.batch_year"
             required
             type="number"
             min="1900"
             max="2100"
             step="1"
-            v-model.number="user.batch_year"
             class="input-blur"
-          />
+          >
         </div>
       </template>
       <template v-else>
         <div class="form-section">
-          <label for="Dept" class="label">Department</label>
+          <label
+            for="Dept"
+            class="label"
+          >Department</label>
           <select
+            v-model="user.teacher_depts"
             required
             class="multi-select uppercase scrollbar-hide"
-            v-model="user.teacher_depts"
             multiple
           >
-            <option v-for="dept in depts" :key="dept" class="label">
+            <option
+              v-for="dept in depts"
+              :key="dept"
+              class="label"
+            >
               {{ dept }}
             </option>
           </select>
@@ -143,8 +211,17 @@
       {{ user }}
     </div> -->
       <div class="form-section">
-        <button type="submit" class="button button-success">Submit</button>
-        <button type="reset" class="button button-danger" @click="reset_vals">
+        <button
+          type="submit"
+          class="button button-success"
+        >
+          Submit
+        </button>
+        <button
+          type="reset"
+          class="button button-danger"
+          @click="reset_vals"
+        >
           Reset
         </button>
       </div>
@@ -154,6 +231,7 @@
 
 <script>
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: "Form",
   data() {
     return {
